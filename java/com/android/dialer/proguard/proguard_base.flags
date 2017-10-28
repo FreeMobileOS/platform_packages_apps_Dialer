@@ -13,6 +13,10 @@
 # problems.
 -dontpreverify
 
+# do not optimize the classes, few are use inline with reflection, which case
+# problem while runtime
+-dontoptimize
+
 # Skipping analysis of some classes may make proguard strip something that's
 # needed.
 -dontskipnonpubliclibraryclasses

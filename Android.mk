@@ -157,8 +157,7 @@ ifdef LOCAL_JACK_ENABLED
 
 # Proguard includes
 LOCAL_PROGUARD_FLAG_FILES := $(call all-named-files-under,proguard.*flags,$(BASE_DIR))
-LOCAL_PROGUARD_ENABLED := custom
-
+LOCAL_PROGUARD_ENABLED := custom nosystem
 LOCAL_PROGUARD_ENABLED += optimization
 endif
 
