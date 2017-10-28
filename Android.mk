@@ -345,7 +345,7 @@ LOCAL_PROGUARD_FLAG_FILES := \
     java/com/android/dialer/proguard/proguard.flags \
     java/com/android/dialer/proguard/proguard_release.flags \
     java/com/android/incallui/answer/impl/proguard.flags
-LOCAL_PROGUARD_ENABLED := custom
+LOCAL_PROGUARD_ENABLED := custom nosystem
 
 LOCAL_PROGUARD_ENABLED += optimization
 endif
