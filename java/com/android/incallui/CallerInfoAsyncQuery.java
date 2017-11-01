@@ -519,7 +519,13 @@ public class CallerInfoAsyncQuery {
                 // the CallerInfo object is totally blank here (i.e. no name
                 // *or* phoneNumber).  So we need to pass in cw.number as
                 // a fallback number.
-                callerInfo.updateGeoDescription(queryContext, cw.number);
+
+                //TODO: FMO: It is crashing while accessing -
+                //PhoneNumberOfflineGeocoder.getInstance();
+                // Mostly due to "PRODUCT_LOCALES" is not set to correct
+                // country code and language. So do not update description for
+                // unknown number till it get fixed
+                //callerInfo.updateGeoDescription(queryContext, cw.number);
               }
             }
 
